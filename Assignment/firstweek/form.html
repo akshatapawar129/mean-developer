@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        label{
+            display: block;
+            font-weight: 700;
+        }
+        legend{
+            font-weight: 700;
+        }
+        form{
+            padding: 10px;
+            margin: 20px;
+            box-shadow: -5px -5px 18px 2px #929292;
+        }
+        fieldset{
+            border-color: #ffffff;
+            border-radius: 5px;
+        }
+        .form-control{
+            margin-bottom: 10px;
+        }
+        .form-control input, .form-control textarea{
+            width: 100%;
+            
+            border: 1px solid #ccc;
+            height: 25px;
+            border-radius: 4px;
+        }
+        .form-control textarea{
+            height: 50px;
+        }
+        .form-control input[type~="radio"], .form-control input[type~="checkbox"]{
+            width: fit-content;
+            margin: 0px;
+            height: auto;
+            margin-right: 5px;
+        }
+        button{
+            background-color: #0277BD;;
+            color: white;
+            height: 30px;
+            border: 0px;
+            border-radius: 3px;
+            padding: 0px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="signup.asp" method="post">
+        <fieldset>
+            <legend>User Signup</legend>
+            <div class="form-control">
+                <label for="">Username: </label>
+                <input type="text" name="username">
+            </div>
+            <div class="form-control">
+                <label for="">Email: </label>
+                <input type="email" placeholder="abc@gmail.com" name="emailid">
+            </div>
+            <div class="form-control">
+                <label for="">Password : </label>
+                <input type="password" name="pass">
+            </div>
+            <div class="form-control">
+                <label for="">Date of Birth :</label>
+                <input type="date" name="dob">
+            </div>
+            <div class="form-control">
+                <label for="">Address : </label>
+                <textarea></textarea>
+            </div>
+            <div class="form-control">
+                <input type="checkbox" name="terms" id=""> 
+                I accept the terms and conditions
+            </div>
+            <div class="form-control">
+                <label for="">Gender : </label>
+                <input type="radio" name="gender"> <strong>Male</strong>
+                <input type="radio" name="gender" id=""> <strong>Female</strong>
+            </div>
+            <div>
+                <p>Already a user? <a href="#">Login</a></p>
+            </div>
+            <button type="submit">
+                Sign Up
+            </button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
