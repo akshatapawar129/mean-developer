@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header, footer, .left-sidebar, .right-sidebar, main{
+padding : 20px;
+border: 1px solid #000;
+}
+header,footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.left-sidebar{
+    width: 20%;
+    float: left;
+    height: 80vh;
+    
+}
+.right-sidebar{
+    width: 20%;
+    float: right ;
+    height: 80vh;
+}
+main{
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+}

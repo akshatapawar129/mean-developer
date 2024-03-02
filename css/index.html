@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Internal Css-->
+    <style>
+        /*Element selector*/
+        p, h1{
+            color: green;
+            font-size: large;
+        }
+        /* Id Selector */
+        #p2, #p1{
+            font-size: x-large;
+        }
+        /* Class selector*/
+        .world{
+            text-align: center;
+        }
+
+        /*pseudo classes*/
+        a:visited{
+            color:brown;
+        }
+        a:hover{
+            color : green;
+        }
+        a:active{
+            color: blueviolet;
+        }
+        button:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" style="color: red;"> Hello World!</p> <!--Inline css-->
+    <p id="p2" class="world">World</p>
+    <p id="p3" class="world">New text</p>
+    <h1 id="h1">Heading</h1>
+    <a href="second.html">Second HTML</a>
+    <button>Click</button>
+</body>
+</html>
