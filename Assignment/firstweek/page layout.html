@@ -4,14 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main-menu{
+            background-color: #333;
+        }
+        .main-menu ul{
+            margin: 0px;
+            display: flex;
+            list-style: none;
+            padding :20px;
+        }
+        .main-menu li a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .main-menu li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        .content-section{
+            display: flex;
+        }
+        .left-section,.right-section{
+            padding:20px 20px;
+            width: 20%;
+            background-color: #eee;
+            height: 100vh;
+        }
+        .middle-section{
+            padding:20px 20px;
+            width: 60%;
+            background-color: #999;
+        }
+        footer{
+            background-color: #333;
+            padding: 15px ;
+        }
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-menu">
             <ul>
-                <li></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <section class="content-section">
+        <div class="left-section">
+            <h1>Left Sidebar</h1>
+            <p>Content goes here.....</p>
+        </div>
+        <div class="middle-section">
+            <h1>Main Sidebar</h1>
+            <p>Content goes here.....</p>
+        </div>
+        <div class="right-section">
+            <h1>Right Sidebar</h1>
+            <p>Content goes here.....</p>
+        </div>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
 </html>
