@@ -14,8 +14,7 @@ header,footer{
 .left-sidebar{
     width: 20%;
     float: left;
-    height: 80vh;
-    
+    height: 80vh; 
 }
 .right-sidebar{
     width: 20%;
